@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Button, Modal, Table } from "react-bootstrap";
 import { HiOutlineExclamationCircle } from "react-icons/hi";
-import { useUser } from './UserContext'; // Importa il contesto utente
+import { useUser } from './UserContext'; 
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const DashComments = () => {
-  const { currentUser } = useUser(); // Usa il contesto utente
+  const { currentUser } = useUser(); 
   const [comments, setComments] = useState([]);
   const [showMore, setShowMore] = useState(true);
   const [showModal, setShowModal] = useState(false);

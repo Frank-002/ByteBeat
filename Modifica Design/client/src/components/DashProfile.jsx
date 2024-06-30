@@ -14,7 +14,7 @@ import {
 import { app } from "../firebase";
 
 const DashProfile = () => {
-  const { currentUser, loading, updateStart, updateSuccess, updateFailure, deleteStart, deleteSuccess, deleteFailure, signOutSuccess } = useUser(); // Usa il contesto utente
+  const { currentUser, loading, updateStart, updateSuccess, updateFailure, deleteStart, deleteSuccess, deleteFailure, signOutSuccess } = useUser(); 
   const filePickerRef = useRef();
 
   const [imageFile, setImageFile] = useState(null);

@@ -2,14 +2,14 @@ import React from 'react';
 import { Button } from 'flowbite-react';
 import { AiFillGoogleCircle } from 'react-icons/ai';
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
-import { useUser } from './UserContext.jsx'; // Assicurati di importare correttamente il provider di contesto UserProvider
+import { useUser } from './UserContext.jsx';
 import { app } from '../firebase';
 import { useNavigate } from 'react-router-dom';
 import "../css/OAuth.css";
 
 const OAuth = () => {
     const auth = getAuth(app);
-    const { signInSuccess } = useUser(); // Utilizzo del contesto UserProvider
+    const { signInSuccess } = useUser(); 
     const navigate = useNavigate();
 
     const handleGoogleClick = async () => {
