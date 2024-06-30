@@ -1,0 +1,13 @@
+.custom-button {
+    color: black !important; /* Mantieni il colore del testo predefinito */
+    text-decoration: none !important; /* Rimuovi sottolineatura se presente */
+}
+
+.custom-button:focus,
+.custom-button:hover,
+.custom-button:active {
+    color: black !important; /* Mantieni il colore del testo predefinito */
+    background-color: transparent !important; /* Rimuovi il colore di sfondo al passaggio del mouse */
+    border-color: transparent !important; /* Rimuovi il colore del bordo al passaggio del mouse */
+    outline: none !important; /* Rimuovi l'outline al focus */
+}
